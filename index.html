@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+          <div class="display">
+           <div class="artboard artboard-demo phone-3">
+            <div class="hero bg-base-200 min-h-screen">
+             <div class="card  w-full max-w-sm ">
+              <!-- Login Section -->
+               <section class="" id="front">
+                <div class="hero bg-base-200 min-h-screen">
+                  <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <form class="card-body">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">YOUR PHONE </span>
+                          </label>
+                          <input id="phone-number" type="text" placeholder="Your Phone Number" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">PIN</span>
+                          </label>
+                          <input id="pin" type="password" placeholder="Enter Your Pin" class="input input-bordered" required />
+                          <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          </label>
+                        </div>
+                        <div class="form-control mt-6">
+                          <button id="button-login" class="btn btn-primary">Login</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+               </section>
+
+              <!-- Home Section  -->
+               <section id="home" class="hidden">
+                <div class="stats shadow">
+                  <div class="stat">
+                    <div id="balance" class="stat-value">89400</div>
+                    <div class="stat-desc">Available Balance</div>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <!-- User action buttons -->
+                <button id="add" class="btn btn-lg">Add Money</button>
+                <button  id="out"  class="btn btn-lg">Cash Out</button>
+                <div class="divider"></div>
+                <!-- Add Money from -->
+                <div id="cAdd" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="add-amount" type="text" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">PIN</span>
+                      </label>
+                      <input id="amount-pin" type="password" placeholder="Inter Your Pin" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="add-money" class="btn btn-primary">Add Money</button>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Cash Out -->
+                <div id="cOut" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body ">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="cash-out" type="text" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">PIN</span>
+                      </label>
+                      <input id="cash-out-pin" type="password" placeholder="Inter Your Pin" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                    </div>
+                    </form>
+                </div>
+               </section>
+             </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>
